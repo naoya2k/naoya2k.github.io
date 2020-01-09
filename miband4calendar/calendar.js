@@ -46,14 +46,14 @@ function drawCalendar() {
     const mstr = monthNames[month];
     // const mstr = (month <= 8) ? "0"+(month+1): ""+(month+1);
     date.setDate(1);
-    ctx.font = "18px 'Roboto Mono'";
+    ctx.font = '18px "Roboto Mono", monospace';
     //    ctx.fillStyle = '#ffeecc';
     ctx.fillStyle = '#ffffff';
     ctx.textAlign="center";
     //    ctx.fillText(""+date.getFullYear()+ "/"+mstr, 60, y);
     ctx.fillText(mstr+" " + date.getFullYear(), 60, y);
     
-    ctx.font = "10px 'Roboto Mono'";
+    ctx.font = '10px "Roboto Mono", monospace';
     ctx.textAlign="center";
     y += 18;
     while (month == date.getMonth()) {
